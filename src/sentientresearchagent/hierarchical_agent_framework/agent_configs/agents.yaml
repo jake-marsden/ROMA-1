@@ -106,8 +106,8 @@ agents:
     adapter_class: "PlannerAdapter"
     description: "Master planner specialized in high-level research project decomposition and strategy"
     model:
-      provider: "litellm"
-      model_id: "openrouter/anthropic/claude-sonnet-4"  # Switched from slow o3 model for 10x faster planning
+      provider: "openai"
+      model_id: "gpt-4o"  # Using OpenAI instead of OpenRouter temporarily
       temperature: 0.3
     # agno_params:
     #   reasoning: true
